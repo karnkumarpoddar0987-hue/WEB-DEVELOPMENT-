@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positive, Negative or Zero</title>
+</head>
+<body>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="checkNumber()">Check</button>
+
+<p id="result"></p>
+
+<script>
+function checkNumber() {
+    let n = document.getElementById("num").value;
+
+    document.getElementById("result").innerText =
+        (n > 0) ? "Positive" : (n < 0) ? "Negative" : "Zero";
+}
+</script>
+
+</body>
+</html>

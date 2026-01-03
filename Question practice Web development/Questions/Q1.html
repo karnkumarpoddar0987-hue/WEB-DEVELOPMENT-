@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even or Odd</title>
+</head>
+<body>
+
+<input type="number" id="num">
+<button onclick="check()">Check</button>
+<p id="result"></p>
+
+<script>
+function check() {
+    let n = document.getElementById("num").value;
+    document.getElementById("result").innerText =
+        (n % 2 == 0) ? "Even" : "Odd";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Based Layout</title>
+<style>
+body{
+    background:#b6e3b6;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width:800px;
+    margin:30px auto;
+    border:2px solid #0a4c8b;
+    background:#fff;
+}
+
+.title{
+    text-align:center;
+    font-weight:bold;
+    padding:10px;
+    color:#0a4c8b;
+}
+
+.header{
+    background:#0a67c7;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:18px;
+}
+
+.menu{
+    background:#fff2a8;
+    text-align:center;
+    padding:8px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #0a4c8b;
+    vertical-align:top;
+    padding:10px;
+}
+
+.sidebar{
+    width:180px;
+    background:#cfe8ff;
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.content h3{
+    margin-top:0;
+}
+
+.footer{
+    background:#0a67c7;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="title">🌐 Table-Based Layout with Merged Cells 🌐</div>
+
+    <div class="header">My Webpage Layout</div>
+
+    <div class="menu">Home | About | Services | Contact</div>
+
+    <table>
+        <tr>
+            <td class="sidebar">
+                <b>Sidebar</b>
+                <ul>
+                    <li>📘 HTML</li>
+                    <li>🎨 CSS</li>
+                    <li>⚙️ JavaScript</li>
+                </ul>
+            </td>
+            <td class="content">
+                <h3>Welcome to My Webpage</h3>
+                <p>
+                    This is an example of how to use a table-based layout in HTML.
+                    Here, we are demonstrating merged cells using colspan and rowspan.
+                </p>
+
+                <h3>About This Layout</h3>
+                <p>
+                    Table layouts were commonly used in early web design.
+                    Today, we mostly use CSS Grid or Flexbox,
+                    but tables are still useful for tabular data and structured layouts.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        © 2025 My Webpage — Designed by Karn Kumar
+    </div>
+</div>
+
+</body>
+</html>

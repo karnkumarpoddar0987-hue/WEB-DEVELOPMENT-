@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3-Digit Armstrong Numbers</title>
+</head>
+<body>
+
+<h2>3-Digit Armstrong Numbers</h2>
+<p id="result"></p>
+
+<script>
+let output = "";
+
+for (let i = 100; i <= 999; i++) {
+    let num = i;
+    let sum = 0;
+
+    while (num > 0) {
+        let digit = num % 10;
+        sum += digit ** 3;
+        num = Math.floor(num / 10);
+    }
+
+    if (sum === i) {
+        output += i + " ";
+    }
+}
+
+document.getElementById("result").innerHTML = output;
+</script>
+
+</body>
+</html>
